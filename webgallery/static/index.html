@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Jerry's Web Gallery</title>
-    <link rel="stylesheet" type="text/css" href="/style/index.css">
-    <script type="module" src="/js/index.mjs"></script>
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <script type="module" src="js/index.mjs"></script>
 </head>
 <body>
     <div class="container">
@@ -12,28 +12,28 @@
             <button type="button" id="add-btn">Add Form</button>
         </div>
         <div class="add-form">
-            <form action="/submit" method="post">
+            <form class="complex_form" id="add-image" >
                 <label for="title">Title:</label>
                 <input class="img-input" type="text" id="title" name="title" required>
                 
                 <label for="author">Author:</label>
                 <input class="img-input" type="text" id="author" name="author" required>
                 
-                <label for="url">Image URL:</label>
-                <input class="img-input" type="url" name="url" id="url" required>
-                
+                <label for="picture">Image:</label>
+                <input type="file" id="picture" name="picture" class="form_element" required />
+
                 <button type="submit" id="submit-img">Submit</button>
             </form>
         </div>
         <div class="picture-box">
-            <div class="count">1/10</div>
+            <div class="count">0/0</div>
             <div class="picture">
                 <div id="prev"></div>
                 <img id="main-image" src="">
                 <div id="next"></div>
             </div>
-            <div class="description">Hippo</div>
-            <div class="author">Author: Thailand Zoo</div>
+            <div class="description"></div>
+            <div class="author"></div>
             <button type="button" id="delete-btn">Delete</button>
         </div>
         <div class="comments">
