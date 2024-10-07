@@ -1,1 +1,1 @@
-jchen03.github.io
+jchen03.github.io/webgallery/static/index.html
